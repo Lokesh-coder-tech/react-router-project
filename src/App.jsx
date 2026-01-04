@@ -2,12 +2,12 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import Pricing from './pages/Pricing';
-import About from './pages/About';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import Home from './Pages/Home';
+import Services from './Pages/Services';
+import Pricing from './Pages/Pricing';
+import About from './Pages/About';
+import Blog from './Pages/Blog';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
