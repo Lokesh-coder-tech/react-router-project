@@ -43,6 +43,8 @@ const About = () => {
               <div className="avatar"></div>
               <h4>John Doe</h4>
               <p>Co-Founder</p>
+              {/* <h4>John Doe</h4>
+              <p>Co-Founder</p> */}
             </div>
           ))}
         </div>
