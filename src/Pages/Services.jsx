@@ -1,13 +1,20 @@
 import React from 'react';
+import webdev from "../assets/webdev.jpg";
+import mobile from "../assets/mobileapps.jpg";
+import uiux from "../assets/uiux.jpg";
+import seo from "../assets/seo.jpg";
+import cloud from "../assets/cloudsol.jpg";
+import consulting from "../assets/consulting.jpg";
+
 
 const Services = () => {
   const services = [
-    { title: "Web Development", desc: "Custom websites tailored to your brand needs." },
-    { title: "Mobile Apps", desc: "Native and cross-platform mobile solutions." },
-    { title: "UI/UX Design", desc: "User-centric design that drives engagement." },
-    { title: "SEO Optimization", desc: "Rank higher and reach your target audience." },
-    { title: "Cloud Solutions", desc: "Scalable cloud infrastructure management." },
-    { title: "Consulting", desc: "Strategic advice to grow your tech stack." },
+    { title: "Web Development", desc: "Custom websites tailored to your brand needs.", img: webdev },
+    { title: "Mobile Apps", desc: "Native and cross-platform mobile solutions.", img: mobile },
+    { title: "UI/UX Design", desc: "User-centric design that drives engagement.", img: uiux },
+    { title: "SEO Optimization", desc: "Rank higher and reach your target audience.", img: seo },
+    { title: "Cloud Solutions", desc: "Scalable cloud infrastructure management.", img: cloud },
+    { title: "Consulting", desc: "Strategic advice to grow your tech stack.", img: consulting },
   ];
 
   return (
@@ -23,7 +30,7 @@ const Services = () => {
         <div className="grid-3">
           {services.map((s, index) => (
             <div key={index} className="card service-card">
-              <div className="icon-box"></div>
+              <div className="icon-box"><img src={s.img} alt={s.title} /></div>
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
             </div>

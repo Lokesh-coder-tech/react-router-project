@@ -16,7 +16,7 @@ const About = () => {
             <h2>Our Story</h2>
             <p>Founded in 2020, StartUpX began with a simple mission: to make technology accessible and impactful for everyone. What started as a small team in a garage has grown into a global agency helping hundreds of clients succeed.</p>
           </div>
-          <div className="image-placeholder">About Us Image</div>
+          <div className="image-placeholder"></div>
         </div>
       </section>
 

@@ -218,16 +218,14 @@ ul {
 .card:hover {
   transform: translateY(-5px);
 }
-.blog-img-placeholder{
-  background-image: url('./assets/img1.jpg');
-  background-size: cover;
-}
+
 .btn-link{
   padding: 7px;
   border-radius: 5px;
   background-color: royalblue;
   color: white;
   border: none;
+  margin-top: 10px;
 }
 
 /* --- Page Headers --- */
@@ -248,13 +246,16 @@ ul {
   width: 50px;
   height: 50px;
   background-color: var(--gray);
-  background-image: url('./assets/img2.jpg');
-  background-size: cover;
-  background-position: center;
   margin-bottom: 20px;
   border-radius: 50%;
 }
-
+.service-card .icon-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  display: block;
+  border-radius: 50%;
+}
 
 
 .process-grid {
@@ -278,6 +279,7 @@ ul {
 }
 
 /* --- Pricing --- */
+
 .pricing-toggle {
   display: flex;
   align-items: center;
@@ -358,6 +360,12 @@ ul {
   border-radius: var(--radius);
   margin-bottom: 20px;
 }
+.blog-img-placeholder img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 .meta {
   font-size: 0.85rem;
@@ -384,6 +392,19 @@ ul {
 .category-filter span.active {
   background: var(--primary);
   color: var(--white);
+}
+
+.about-content .image-placeholder{
+  width: 60%;
+  height: 300px;
+  margin-left: 250px;
+  background-color: var(--gray);
+  border-radius: var(--radius);
+  margin-top: 30px;
+  margin-bottom: -20px;
+  background-image: url('../public/logo.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 /* --- Contact --- */
@@ -458,6 +479,10 @@ ul {
 .footer-col a:hover {
   color: var(--white);
 }
+.footer-col .social-links{
+  display: flex;
+  gap: 10px;
+}
 
 .footer-bottom {
   text-align: center;
@@ -492,7 +517,30 @@ ul {
   .hero h1 {
     font-size: 2.5rem;
   }
-  
+  .pricing-page .container{
+  padding: 0px 15px;
+ }
+ 
+ .about-content{
+  padding: 0px 5px;
+ }
+ .about-content .text-block{
+  padding: 0px 10px;
+  text-align: center;
+ }
+ .about-content .image-placeholder{
+  width: 100%;
+  height: 200px;
+  background-color: var(--gray);
+  border-radius: var(--radius);
+  margin-left: -0.2px;
+  margin-top: 60px;
+  margin-bottom: -40px;
+}
+.section-title{
+  margin-left: 30px;
+}
+
   .contact-grid,
   .footer-grid {
     grid-template-columns: 1fr;
